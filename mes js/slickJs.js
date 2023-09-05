@@ -24,7 +24,8 @@ $(function () {
   $("#iconclose").click(function () {
     $(".home-slider-bis-content").slick("slickPlay");
   });
-$(".gallery").slick({
+
+  $(".gallery").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     // autoplay: true,
