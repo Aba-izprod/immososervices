@@ -1,0 +1,23 @@
+.open {
+  -webkit-transform: translate(0%);
+  -ms-transform: translate(0%);
+  transform: translate(0%);
+  background: rgb(1, 80, 110);
+  background: -o-radial-gradient(
+    circle,
+    rgba(1, 80, 110, 1) 0%,
+    rgba(53, 197, 234, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(1, 80, 110, 1) 0%,
+    rgba(53, 197, 234, 1) 100%
+  );
+}
+.sociaux {
+  -webkit-transform: translate(0%);
+  -ms-transform: translate(0%);
+  transform: translate(0%);
+  background: transparent;
+  margin-right: 2.3rem;
+}

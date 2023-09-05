@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cabinet ImmoSoservices</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,500;8..144,700;8..144,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font custom css file link -->
+    <link rel="stylesheet" href="css/index/style.css" />
+    <link rel="stylesheet" href="css/style_header.css" />
+    <link rel="stylesheet" href="css/index/responsive.css" />
+    <link rel="stylesheet" href="css/style_footer.css" />
+    <link rel="stylesheet" href="css/style-js.css" />
+    <link rel="stylesheet" href="slickJs/slick.css"/>
+    <link rel="stylesheet" href="slickJs/slick-theme.css"/>
+    <link rel="stylesheet" href="css/styleslick.css"/> 
+
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="">
+        <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+          <a
+          href="index.html"
+          class="nav-icon navbar-brand"
+          aria-label="homepage"
+          aria-current="page"
+        >
+          <img src="image/key.jpeg" alt="key icon" />
+          <span>ImmoSoservices</span>
+        </a>
+        <div class="main-navlinks">
+          <button
+            type="button"
+            class="hamburger"
+            aria-label="Toggle Navigation"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="navlinks-container navbar-collapse">
+              <a href="#" aria-current="page" class="nav-link">Accueil</a></li>
+              <a href="#">L'agence</a>
+              <a href="#">&Aacute; vendre</a>
+              <a href="#">&Aacute; louer</a>
+              <a href="#">Contact</a>
+          </div>
+        </div>
+        <div class="nav-authentication">
+          <a href="#" class="user-toggler" aria-label="Sign in page">
+            <i class="fa-solid fa-magnifying-glass" id="iconsearch"></i>
+          </a>
+          <div class="sign-btns btn1">
+            <button type="button">Recherche</button>
+          </div>
+        </div>
+        </div>
+      </nav>
+    </header>
+      <div class="home full-width home-slider-bis" data-aos="fade-down">
+        
+        <section class="center">
+          <form action="search.html" method="post">
+            <span class="span-close">
+              <i class="fa-solid fa-xmark" id="iconclose"></i>
+            </span>
+            <h3 class="text-uppercase">vous cherchez un bien?</h3>
+            <div clsaa="flex">
+              <div class="box">
+                <label for="exampleInputPassword1" class="form-label"
+                >Catégories</label
+              >
+                <select
+                  class="form-select shadow-none border-0 w-100"
+                  aria-label="Default select example"
+                >
+                  <option selected>Catégories</option>
+                  <option value="1">à vendre</option>
+                  <option value="2">à louer</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="box">
+                <label for="exampleInputPassword1" class="form-label">Types</label>
+                <select
+                class="form-select shadow-none border-0 w-100"
+                aria-label="Default select example"
+                >
+                  <option selected>Types</option>
+                  <option value="1">Maison</option>
+                  <option value="2">Appartement</option>
+                  <option value="3">Terrain</option>
+                  <option value="4">Bureau</option>
+                  <option value="5">Commerce</option>
+                </select>
+              </div>
+              <div class="box">
+                <label for="exampleInputPassword1" class="form-label"
+                >Commune</label
+                >
+                <select
+                class="form-select shadow-none border-0"
+                aria-label="Default select example"
+                >
+                  <option selected>Commune</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="box">
+                <label for="exampleInputPassword1" class="form-label">Prix</label>
+                <input
+                type="number"
+                class="form-control shadow-none border-0"
+                id="exampleInputPassword1"
+                min="0"
+              />
+              </div>
+            </div>
+            <div
+            class="rounded-3 input submit box-select d-flex justify-content-center align-items-center"
+          >
+            <button type="submit" class="fs-4 mt-4">Rechercher</button>
+          </div>
+          </form>
+        </section>
+        <div class="home-slider-bis-content">
+          <div class="home-slider-bis-one" >
+            <div class="home-slider-bis-img" style="background-image:url('assets/img1.jpg');"></div>
+          </div>
+          <div class="home-slider-bis-one" >
+            <div class="home-slider-bis-img" style="background-image:url('assets/img2.jpg');"></div>
+            </div>
+          <div class="home-slider-bis-one" >
+            <div class="home-slider-bis-img" style="background-image:url('assets/img3.jpg');"></div>
+          </div>
+          <div class="home-slider-bis-one" >
+            <div class="home-slider-bis-img" style="background-image:url('assets/img4.jpg');"></div>
+          </div>
+          <div class="home-slider-bis-one" >
+            <div class="home-slider-bis-img" style="background-image:url('assets/img5.jpg');"></div>
+          </div>
+        </div>
+          <img src="assets/arrow_bottom.png" class="logo" aria-expanded="false"/>
+        <ul class="medias">
+          <li class="bulle"><a href="https://fb.com/" class="text-dark d-inline-block"><ion-icon name="logo-facebook" class="logo-medias"></ion-icon></a></li>
+          <li class="bulle"> <a href="https://twitter.com/" class="text-dark d-inline-block"><ion-icon name="logo-twitter" class="logo-medias"></ion-icon></a></li>
+          <li class="bulle"><a href="https://linkedin.com/" class="text-dark d-inline-block" ><ion-icon name="logo-linkedin" class="logo-medias"></ion-icon></a></li>
+          <li class="bulle"><a href="https://instagram.com/" class="text-dark d-inline-block"><ion-icon name="logo-instagram" class="logo-medias"></ion-icon></a></li>
+      </ul>
+      </div>
+    </div>
+    <section class="listtof w-100">
+      <div class="container-fluid position-relative">
+        <div class="position-relative">
+          <h3 class="bloc-title-text">
+            <span>Notre s&eacute;lection</span>
+          </h3>
+        </div>
+      <div class="slideshow-listing-link">
+        <a href="#" title="Voir toute notre sélection en notre sélection">Liste <i class="fa fa-lg fa-angle-right"></i></a>
+      </div>  
+        <ul class="gallery">
+          <li class="profile-card">
+            <img src="assets/house-img-1.webp" alt="profile" class="profile-img">
+            <ul class="side-social">
+              <a href="#">
+                <i class="fa-solid fa-heart me-2"></i>
+                S&eacute;lection
+              </a>
+              <a href="#">
+                <i class="fa-solid fa-certificate me-2"></i>
+                Exclusivit&eacute;
+              </a>
+              <!-- <a href="#">
+                <img src="image/icons/linkedin.svg" alt="linkedin icon">
+              </a> -->
+            </ul>
+            <div class="profile-info">
+              <p class="profile-name">Vente Villa</p>
+              <p class="profile-work">160m<sup>2</sup></p>
+            </div>
+          </li>
+          <li class="profile-card">
+            <img src="assets/house-img-2.webp" alt="profile" class="profile-img">
+            <ul class="side-social">
+              <a href="#">
+                <i class="fa-solid fa-heart me-2"></i>
+                S&eacute;lection
+              </a>
+              <a href="#">
+                <i class="fa-solid fa-certificate me-2"></i>
+                Exclusivit&eacute;
+              </a>
+              <!-- <a href="#">
+                <img src="image/icons/linkedin.svg" alt="linkedin icon">
+              </a> -->
+            </ul>
+            <div class="profile-info">
+              <p class="profile-name">Vente Villa</p>
+              <p class="profile-work">160m<sup>2</sup></p>
+            </div>
+          </li>
+          <li class="profile-card">
+            <img src="assets/house-img-4.webp" alt="profile" class="profile-img">
+            <ul class="side-social">
+              <a href="#">
+                <i class="fa-solid fa-heart me-2"></i>
+                S&eacute;lection
+              </a>
+              <a href="#">
+                <i class="fa-solid fa-certificate me-2"></i>
+                Exclusivit&eacute;
+              </a>
+              <!-- <a href="#">
+                <img src="image/icons/linkedin.svg" alt="linkedin icon">
+              </a> -->
+            </ul>
+            <div class="profile-info">
+              <p class="profile-name">Vente Villa</p>
+              <p class="profile-work">160m<sup>2</sup></p>
+            </div>
+          </li>
+          <li class="profile-card">
+            <img src="assets/house-img-5.webp" alt="profile" class="profile-img">
+            <ul class="side-social">
+              <a href="#">
+                <i class="fa-solid fa-heart me-2"></i>
+                S&eacute;lection
+              </a>
+              <a href="#">
+                <i class="fa-solid fa-certificate me-2"></i>
+                Exclusivit&eacute;
+              </a>
+              <!-- <a href="#">
+                <img src="image/icons/linkedin.svg" alt="linkedin icon">
+              </a> -->
+            </ul>
+            <div class="profile-info">
+              <p class="profile-name">Vente Villa</p>
+              <p class="profile-work">160m<sup>2</sup></p>
+            </div>
+          </li>
+          <li class="profile-card">
+            <img src="assets/house-img-6.webp" alt="profile" class="profile-img">
+            <ul class="side-social">
+              <a href="#">
+                <i class="fa-solid fa-heart me-2"></i>
+                S&eacute;lection
+              </a>
+              <a href="#">
+                <i class="fa-solid fa-certificate me-2"></i>
+                Exclusivit&eacute;
+              </a>
+              <!-- <a href="#">
+                <img src="image/icons/linkedin.svg" alt="linkedin icon">
+              </a> -->
+            </ul>
+            <div class="profile-info">
+              <p class="profile-name">Vente Villa</p>
+              <p class="profile-work">160m<sup>2</sup></p>
+            </div>
+          </li>
+          <li class="profile-card">
+            <img src="assets/hall-img-1.webp" alt="profile" class="profile-img">
+            <ul class="side-social">
+              <a href="#">
+                <i class="fa-solid fa-heart me-2"></i>
+                S&eacute;lection
+              </a>
+              <a href="#">
+                <i class="fa-solid fa-certificate me-2"></i>
+                Exclusivit&eacute;
+              </a>
+              <!-- <a href="#">
+                <img src="image/icons/linkedin.svg" alt="linkedin icon">
+              </a> -->
+            </ul>
+            <div class="profile-info">
+              <p class="profile-name">Vente Villa</p>
+              <p class="profile-work">160m<sup>2</sup></p>
+            </div>
+          </li>
+          <li class="profile-card">
+            <img src="assets/hall-img-2.webp" alt="profile" class="profile-img">
+            <ul class="side-social">
+              <a href="#">
+                <i class="fa-solid fa-heart me-2"></i>
+                S&eacute;lection
+              </a>
+              <a href="#">
+                <i class="fa-solid fa-certificate me-2"></i>
+                Exclusivit&eacute;
+              </a>
+              <!-- <a href="#">
+                <img src="image/icons/linkedin.svg" alt="linkedin icon">
+              </a> -->
+            </ul>
+            <div class="profile-info">
+              <p class="profile-name">Vente Villa</p>
+              <p class="profile-work">160m<sup>2</sup></p>
+            </div>
+          </li>
+          <li class="profile-card">
+            <img src="assets/hall-img-3.webp" alt="profile" class="profile-img">
+            <ul class="side-social">
+              <a href="#">
+                <i class="fa-solid fa-heart me-2"></i>
+                S&eacute;lection
+              </a>
+              <a href="#">
+                <i class="fa-solid fa-certificate me-2"></i>
+                Exclusivit&eacute;
+              </a>
+              <!-- <a href="#">
+                <img src="image/icons/linkedin.svg" alt="linkedin icon">
+              </a> -->
+            </ul>
+            <div class="profile-info">
+              <p class="profile-name">Vente Villa</p>
+              <p class="profile-work">160m<sup>2</sup></p>
+            </div>
+          </li>
+          <li class="profile-card">
+            <img src="assets/hall-img-4.webp" alt="profile" class="profile-img">
+            <ul class="side-social">
+              <a href="#">
+                <i class="fa-solid fa-heart me-2"></i>
+                S&eacute;lection
+              </a>
+              <a href="#">
+                <i class="fa-solid fa-certificate me-2"></i>
+                Exclusivit&eacute;
+              </a>
+              <!-- <a href="#">
+                <img src="image/icons/linkedin.svg" alt="linkedin icon">
+              </a> -->
+            </ul>
+            <div class="profile-info">
+              <p class="profile-name">Vente Villa</p>
+              <p class="profile-work">160m<sup>2</sup></p>
+            </div>
+          </li>
+          <li class="profile-card">
+            <img src="assets/hall-img-5.webp" alt="profile" class="profile-img">
+            <ul class="side-social">
+              <a href="#">
+                <i class="fa-solid fa-heart me-2"></i>
+                S&eacute;lection
+              </a>
+              <a href="#">
+                <i class="fa-solid fa-certificate me-2"></i>
+                Exclusivit&eacute;
+              </a>
+              <!-- <a href="#">
+                <img src="image/icons/linkedin.svg" alt="linkedin icon">
+              </a> -->
+            </ul>
+            <div class="profile-info">
+              <p class="profile-name">Vente Villa</p>
+              <p class="profile-work">160m<sup>2</sup></p>
+            </div>
+          </li>
+          <li class="profile-card">
+            <img src="assets/hall-img-6.webp" alt="profile" class="profile-img">
+            <ul class="side-social">
+              <a href="#">
+                <i class="fa-solid fa-heart me-2"></i>
+                S&eacute;lection
+              </a>
+              <a href="#">
+                <i class="fa-solid fa-certificate me-2"></i>
+                Exclusivit&eacute;
+              </a>
+              <!-- <a href="#">
+                <img src="image/icons/linkedin.svg" alt="linkedin icon">
+              </a> -->
+            </ul>
+            <div class="profile-info">
+              <p class="profile-name">Vente Villa</p>
+              <p class="profile-work">160m<sup>2</sup></p>
+            </div>
+          </li>
+          <li class="profile-card">
+            <img src="assets/img1.jpg" alt="profile" class="profile-img">
+            <ul class="side-social">
+              <a href="#">
+                <i class="fa-solid fa-heart me-2"></i>
+                S&eacute;lection
+              </a>
+              <a href="#">
+                <i class="fa-solid fa-certificate me-2"></i>
+                Exclusivit&eacute;
+              </a>
+              <!-- <a href="#">
+                <img src="image/icons/linkedin.svg" alt="linkedin icon">
+              </a> -->
+            </ul>
+            <div class="profile-info">
+              <p class="profile-name">Vente Villa</p>
+              <p class="profile-work">160m<sup>2</sup></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="main">
+      <footer calss="footer-full">
+        <div class="container">
+          <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+          </div>
+          <div class="row footer-row">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 footer-left">
+              <div class="container-slider-agence">
+                <div class="bx-wrapper">
+                  <div class="bx-viewport">
+                    <div id="slider_agence_footer">
+                      <div class="item-agence">
+                        <h3 class="text-uppercase">immososervices</h3>
+                        <div class="desc-agence">
+                          ImmoSoservices est une entreprise de nettoyage
+                          professionnel de haut de gamme avec une &eacute;quipe
+                          dynamique, comp&eacute;titive et
+                          exp&eacute;riment&eacute;e; connaissant bien le
+                          secteur et les attentes des clients.
+                        </div>
+                        <h3 class="mt-3">Nos Coordonnées</h3>
+                        <ul class="coord-agence p-0">
+                          <li class="text-uppercase">
+                            <ion-icon
+                              name="location-outline"
+                              class="me-1"
+                            ></ion-icon
+                            >ouest foire, Dakar
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-phone" class=""></i>Tél. : 78
+                            293 19 14
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 footer-center">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <div class="bloc-links">
+                    <h3>Nos Services</h3>
+                    <ul class="links-footer">
+                      <li><a href="#" title="Acheter">Acheter</a></li>
+                      <li><a href="#" title="Vendre">Vendre</a></li>
+                      <li><a href="#" title="Louer">Louer</a></li>
+                      <li><a href="#" title="Estimation">Estimation</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <div class="bloc-links">
+                    <h3>Liens pratiques</h3>
+                    <ul class="links-footer links-pratiques">
+                      <li><a>© 2023 ImmoSoservices</a></li>
+                      <li><a href="#">Notre agence</a></li>
+                      <li><a href="#">Plan du site</a></li>
+                      <li><a href="#">Contactez-nous</a></li>
+                      <li><a href="#">Mentions</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <div class="zoom text-sm-center">
+                <h3>Nos R&eacute;seau</h3>
+                <ul class="social_icon row">
+                  <li class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                    <a href="https://fb.com/"
+                      ><ion-icon name="logo-facebook"></ion-icon
+                    ></a>
+                  </li>
+                  <li class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                    <a href="https://twitter.com/"
+                      ><ion-icon name="logo-twitter"></ion-icon
+                    ></a>
+                  </li>
+                  <li class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                    <a href="https://linkedin.com/"
+                      ><ion-icon name="logo-linkedin"></ion-icon
+                    ></a>
+                  </li>
+                  <li class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                    <a href="https://instagram.com/"
+                      ><ion-icon name="logo-instagram"></ion-icon
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Team</a></li>
+              </ul> -->
+              <!-- <p>© Code with RizZ | All right reserved</p> -->
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+        <!-- font custom js file link -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="mes js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="mes js/file.js"></script>
+    <script src="mes js/script_header.js"></script>
+    <script src="slickJs/jquery-1.11.0.min.js"></script>
+    <script src="slickJs/jquery-migrate-1.2.1.min.js"></script>
+    <script src="slickJs/slick.min.js"></script>
+    <script src="mes js/slickJs.js"></script>
+    <script src="mes js/gsap/gsap.js"></script>
+    <script src="mes js/apps.js"></script>
+  </body>
+</html>

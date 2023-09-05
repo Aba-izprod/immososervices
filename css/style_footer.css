@@ -1,0 +1,212 @@
+.main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+    background: #fff;
+    margin-top: 330px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+footer .social_icon,
+footer .menu {
+    position: relative;
+    margin: 30px 0;
+}
+footer .social_icon li a {
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+footer .social_icon li a {
+    -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+            transform: translateY(-10px);
+}
+.bloc-links {
+    /* border : 1px solid red; */
+    /* padding: 0 auto; */
+}
+/* footer .menu li a {
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    opacity: 0.75;
+}
+
+footer .menu li a:hover {
+
+    opacity: 1;
+} */
+
+/* footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+} */
+
+
+footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #fff url(../image/wave1.png);
+    background-size: 1000px 100px;
+
+}
+
+footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    -webkit-animation: animatewave 30s linear infinite;
+            animation: animatewave 30s linear infinite;
+            -webkit-animation-delay: 0s;
+                    animation-delay: 0s;
+}
+footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    -webkit-animation: animatewave2 15s linear infinite;
+            animation: animatewave2 15s linear infinite;
+            -webkit-animation-delay: -5s;
+                    animation-delay: -5s;
+}
+footer .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 20px;
+    -webkit-animation: animatewave 2.5s linear infinite;
+            animation: animatewave 2.5s linear infinite;
+            -webkit-animation-delay: -2s;
+                    animation-delay: -2s;
+}
+footer .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 15px;
+    -webkit-animation: animatewave2 3s linear infinite;
+            animation: animatewave2 3s linear infinite;
+            -webkit-animation-delay: -5s;
+                    animation-delay: -5s;
+}
+@-webkit-keyframes animatewave {
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-position-x: 0;
+    }
+
+}
+
+
+@keyframes animatewave {
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-position-x: 0;
+    }
+
+}
+
+@-webkit-keyframes animatewave2 {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+
+}
+
+
+@keyframes animatewave2 {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+
+}
+.zoom {
+    margin: auto;
+    padding: auto;
+}
+.zoom li a {
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+.zoom li a:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+.footer-center .row {
+    text-align: center;
+}
+.footer-center .row .col-xs-12 {
+    margin: 0;
+}
+.footer-center .row .col-xs-12 .links-footer a {
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    opacity: 0.75;
+}
+.footer-center .row .col-xs-12 .links-footer a:hover {
+    opacity: 1;
+}
+.footer-left .desc-agence,
+.footer-left .coord-agence li {
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
