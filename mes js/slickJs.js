@@ -24,33 +24,26 @@ $(function () {
   $("#iconclose").click(function () {
     $(".home-slider-bis-content").slick("slickPlay");
   });
-
-  $(".gallery").slick({
+$(".gallery").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    // autoplay: true,
+    // autoplaySpeed: 2000,
     cssEase: "ease-in-out",
-    // lazyLoad : 'progressive',
-    // fade: false,
-  //   responsive: [
-  //     {
-  //       breakpoint: 768,
-  //       settings: {
-  //         slidesToShow: 2,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 576,
-  //       settings: {
-  //         rows: 1,
-  //         slidesToShow: 1,
-          // vertical: true,
-    //       fade : true,
-    //       cssEase: 'linear',
-    //     },
-    //   },
-    // ],
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 
   // $(".btn2 span:last-child").click(function () {
